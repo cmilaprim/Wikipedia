@@ -1,0 +1,515 @@
+@charset "UTF-8";
+  * {
+    color:#0D0D0D;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #ffffff;
+    box-shadow: border-box;
+}
+html, body {
+    background-color: #f0f7da;
+    margin: 0em;
+
+}
+h1,h2 {
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0.5em;
+    text-align: start;
+    border-bottom: 0.1em solid #f0f7da;
+}
+h3 {
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0.5em;
+    border-bottom: 0.1em solid #f0f7da;
+}
+h4{
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0.5em;
+}
+ul {
+    list-style-type: none;
+    padding-left: 5px;
+}
+a {
+    color: #77ab59;
+    text-decoration: none;
+    padding: 0;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    text-align: justify;
+    padding: 1em;
+    text-indent: 3em;
+}
+blockquote {
+    font-style: italic;
+    border-left: 2px solid #234d20;
+    padding: 0 1em;
+    text-align: justify;
+    margin: 1em 2em;
+}
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #ffffff;
+}
+figcaption {
+    text-align: justify;
+    padding: 0em;
+}
+/* Cabeçalho
+-----------------------------*/
+header {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    border-bottom: 0.1em solid #f0f7da;
+
+}
+
+.logo-page {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+}
+
+.logo-page img {
+    transform: scaleX(-1);
+    padding: 0.5em;
+    width: 50px;
+    height: 50px;
+}
+.subtitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0.5em;
+}
+.subtitle h4 {
+    margin: 0 0.5em;
+}
+
+.subtitle h6 {
+    margin: 0.5em 0;
+}
+
+.search-header {
+    width: 50em;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    
+}
+.search-header span {
+    padding: 0;
+    margin: 0;
+    color: #c1c2c1;
+}
+.search-header input {
+    width: 100%;
+    border: 1.8px solid #c1c2c1;
+    border-radius: 2px;
+}
+header #menu {
+    display: none;
+    font-size: 2em;
+    margin: 0 auto;
+    color: #f0f7da;
+    padding: 0 auto;
+    border: none;
+}
+.conta {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0; 
+}
+.conta-link {
+    display: flex;
+}
+.conta a {
+    font-size: 0.8em;
+    padding: 0 0.5em;
+}
+.conta span {
+    padding: 0.5em 1em;
+}
+/* Navegador do conteudo
+----------------------------------------*/
+.bar {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    border-bottom: 0.1em solid #f0f7da;
+
+}
+.dropdown-content {
+    display: flex;
+}
+.bar a {
+    padding: 0em;
+    font-size: 0.90em;
+    color: #234d20;
+}
+/* Conteudo
+----------------------------------------*/
+.content {
+    box-sizing: content-box;
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #e0e0de;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    margin: 0.5em;
+}
+.main h1 {
+    font-size: 1rem;
+    text-align: center;
+    margin: 0;
+    padding: 0.5em;
+    border-bottom: 0.1em solid #f0f7da;
+}
+.card-title {
+    padding: .8em;    
+}
+.card-poster {
+    padding: 0.5em;
+    float:left;
+}
+
+
+/*- Menu lateral esquerdo
+--------------------------------------------*/
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+    width: 20%;
+    text-align: center; 
+    margin: 0.5em;
+    color: #234d20;
+
+
+}
+li,details {
+    padding: 0.8em;    
+    color: #234d20;
+
+}
+ul {
+    margin: 0;
+    padding: 0.30em;
+    text-align: center;
+    color: #234d20;
+
+}
+
+/* Ancora esquerda
+------------------------------------------------*/
+.anchors {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8em;
+    width: 20%;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+/* Sinopse
+------------------------------------------------*/
+.card-geral {
+    float: right;
+    width: 20em;
+    padding: 0.5em;
+}
+
+.card-geral img {
+    width: 15em;
+
+}
+/* principal
+----------------------------------------*/
+.card-anya {
+    float: left;
+    width: 20em;
+    padding: 0em;
+
+}
+.card-anya img {
+    width: 10em;
+}
+
+.card-Bill {
+    float: left;
+    width: 20em;
+    padding: 0.5em;
+
+}
+.card-Bill img {
+    width: 10em;
+
+}
+.card-moses{
+    float: left;
+    width: 20em;
+    padding: 0em;
+
+}
+.card-moses img {
+    width: 10em;
+
+
+}
+.card-seidel {
+    float: left;
+    width: 20em;
+    padding: 0.1em;
+}
+.card-seidel img {
+    width: 10em;
+}
+
+.card-root {
+    float: left;
+    width: 20em;
+
+
+}
+
+.card-root img {
+    width: 10em;
+}
+
+.card-pirrie {
+    float: left;
+    width: 20em;
+    padding: 0.5em;
+
+
+}
+
+.card-pirrie img{
+    width: 10em;
+
+
+}
+.card-ake{
+    float: left;
+    width: 20em;
+    padding: 0.5em;
+
+}
+.card-ake img {
+    width: 10em;
+
+}
+.card-heller{
+    float: left;
+    width: 20em;
+    padding: 0.5em;
+
+}
+.card-heller{
+    width: 20em;
+
+}
+.card-melling{
+    float: left;
+    width: 20em;
+}
+.card-melling{
+    width: 20 em;
+
+}
+
+.card-kennedy{
+    float: left;
+    width: 20em;
+    padding: 0em;
+
+}
+.card-kennedy img {
+    width: 10em;
+
+}
+
+.card-lloyd {
+    float: left;
+    width: 20em;
+    padding: 0em;
+
+}
+
+.card-lloyd img {
+    width: 10em;
+
+}
+.card-sangster {
+    float: left;
+    width: 20em;
+    padding: 0em;
+}
+
+.card-sangster img {
+    width: 10em;
+
+}
+
+
+
+/* Producao-tabela
+-----------------------------------------*/
+.epsisodio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+}
+.epsisodio {
+    display: table;
+    width: 80%;
+    border-collapse: separate;
+    color: #67348b;
+}
+
+.epsisodio th {
+    align-items: center;
+    color: #0a0310;
+    background-color: #36802d;
+    padding: 1em;
+}
+.epsisodio td {
+
+    color: #0a0310;
+    background-color: #77ab59;
+    text-align: center;
+    padding: 0.5em;
+
+}
+/* Escrita
+----------------------------------------*/
+.img-producao {
+    display: flex;
+    width: 75%;
+    
+}
+.img-producao img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+/* Controversias
+----------------------------------------*/
+.card-game img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+}
+.card-game {
+    margin: 0.5em 0;
+}
+
+#notas {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+/*-------Referencias----------*/
+#referencias {
+    display: block;
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+#referencias button {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5em;
+    margin: 0.5em auto;
+    background-color: #36802d;
+    border-radius: 3px;
+    border: none;
+}
+#referencias a {
+    color: #0a0310;
+    background-color: #36802d;
+}
+#referencias button:hover a {
+    color: #f0f7da;
+    text-decoration: none;
+}
+/*--------Footer--------*/
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    border-top: 0.1em solid #f0f7da ;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 0.5em;
+    margin: 0 auto;
+    
+}
+.text > p {
+    font-size: 0.8em;
+    text-align: center;
+}
+.footer-nav a {
+    display: block;
+    padding: 0.5em 0;
+    color: #0a0310;
+}
+.logo-page {
+    margin: 0 auto;
+
+}
+.direitos {
+    font-size: 0.8em;
+    text-align: center;
+    padding: 0.5em 0;
+    color: #0a0310;
+    background-color: #36802d;
+    width: 100%;
+}
+.card-producao{
+    padding: 0.5em;
+    float: right;
+}
+.card-producao1{
+    padding: 0.5em;
+    float: left;
+} 
+
